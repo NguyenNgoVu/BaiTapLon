@@ -23,12 +23,16 @@ namespace quanLyCauThu
             textBox2.Text = "Nhập họ và tên";
             textBox3.Text = "Nhập tuổi công dân";
             textBox4.Text = "Nhập điểm công dân";
-            textBox1.ForeColor = Color.Black;
-            textBox2.ForeColor = Color.Black;
-            textBox3.ForeColor = Color.Black;
-            textBox4.ForeColor = Color.Black;
+            textBox1.ForeColor = Color.DarkGray;
+            textBox2.ForeColor = Color.DarkGray;
+            textBox3.ForeColor = Color.DarkGray;
+            textBox4.ForeColor = Color.DarkGray;
             label1.Parent = pictureBox1;
             label1.ForeColor = Color.Black;
+            button7.Visible = false;
+            label2.Parent = pictureBox1;
+            label2.ForeColor = Color.Black;
+            label2.Visible = false;
         }
 
         private void textBox1_Enter(object sender, EventArgs e)
@@ -45,7 +49,7 @@ namespace quanLyCauThu
             if(textBox1.Text == "")
             {
                 textBox1.Text = "Nhập mã công dân";
-                textBox1.ForeColor = Color.Black;
+                textBox1.ForeColor = Color.DarkGray;
             }
         }
 
@@ -63,7 +67,7 @@ namespace quanLyCauThu
             if (textBox2.Text == "")
             {
                 textBox2.Text = "Nhập họ và tên";
-                textBox2.ForeColor = Color.Black;
+                textBox2.ForeColor = Color.DarkGray;
             }
         }
 
@@ -72,7 +76,7 @@ namespace quanLyCauThu
             if (textBox3.Text == "")
             {
                 textBox3.Text = "Nhập tuổi công dân";
-                textBox3.ForeColor = Color.Black;
+                textBox3.ForeColor = Color.DarkGray;
             }
         }
 
@@ -99,8 +103,19 @@ namespace quanLyCauThu
             if (textBox4.Text == "")
             {
                 textBox4.Text = "Nhập điểm công dân";
-                textBox4.ForeColor = Color.Black;
+                textBox4.ForeColor = Color.DarkGray;
             }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            
+            button7.Visible = true;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            label2.Visible = true;
         }
     }
 }
