@@ -41,6 +41,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -61,8 +62,8 @@
             this.textBox1.BackColor = System.Drawing.Color.OldLace;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.textBox1.Location = new System.Drawing.Point(712, 318);
+            this.textBox1.ForeColor = System.Drawing.Color.DarkCyan;
+            this.textBox1.Location = new System.Drawing.Point(697, 534);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(428, 43);
@@ -74,7 +75,7 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.textBox2.Location = new System.Drawing.Point(712, 392);
+            this.textBox2.Location = new System.Drawing.Point(697, 608);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(428, 43);
@@ -86,7 +87,7 @@
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.textBox3.Location = new System.Drawing.Point(712, 462);
+            this.textBox3.Location = new System.Drawing.Point(697, 678);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(428, 43);
@@ -98,7 +99,7 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox4.Font = new System.Drawing.Font("Candara Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.textBox4.Location = new System.Drawing.Point(712, 534);
+            this.textBox4.Location = new System.Drawing.Point(697, 750);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(428, 43);
@@ -107,8 +108,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 586);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 586);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(571, 405);
             this.dataGridView1.TabIndex = 5;
             // 
@@ -117,6 +119,7 @@
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(1225, 586);
             this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.Size = new System.Drawing.Size(571, 405);
             this.dataGridView2.TabIndex = 6;
             // 
@@ -124,7 +127,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.PapayaWhip;
             this.button1.Font = new System.Drawing.Font("Candara Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(712, 636);
+            this.button1.Location = new System.Drawing.Point(697, 823);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(119, 54);
             this.button1.TabIndex = 7;
@@ -135,7 +138,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.PapayaWhip;
             this.button2.Font = new System.Drawing.Font("Candara Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(866, 636);
+            this.button2.Location = new System.Drawing.Point(851, 823);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(119, 54);
             this.button2.TabIndex = 8;
@@ -146,7 +149,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.PapayaWhip;
             this.button3.Font = new System.Drawing.Font("Candara Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(1021, 636);
+            this.button3.Location = new System.Drawing.Point(1006, 823);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(119, 54);
             this.button3.TabIndex = 9;
@@ -157,7 +160,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.PapayaWhip;
             this.button4.Font = new System.Drawing.Font("Candara Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(712, 715);
+            this.button4.Location = new System.Drawing.Point(697, 902);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(119, 54);
             this.button4.TabIndex = 10;
@@ -168,7 +171,7 @@
             // 
             this.button5.BackColor = System.Drawing.Color.PapayaWhip;
             this.button5.Font = new System.Drawing.Font("Candara Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(866, 715);
+            this.button5.Location = new System.Drawing.Point(851, 902);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(119, 54);
             this.button5.TabIndex = 11;
@@ -179,19 +182,31 @@
             // 
             this.button6.BackColor = System.Drawing.Color.PapayaWhip;
             this.button6.Font = new System.Drawing.Font("Candara Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(1021, 715);
+            this.button6.Location = new System.Drawing.Point(1006, 902);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(119, 54);
             this.button6.TabIndex = 12;
             this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(791, 446);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(238, 39);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Come join us.";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1808, 1003);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -234,6 +249,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label1;
     }
 }
 
