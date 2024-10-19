@@ -255,5 +255,15 @@ namespace quanLyCauThu.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap z5945270707947_1450df2441fb30e19cdd75848f1d81d5 {
+            get {
+                object obj = ResourceManager.GetObject("z5945270707947_1450df2441fb30e19cdd75848f1d81d5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
