@@ -2,17 +2,22 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 
 namespace quanLyCauThu
 {
     public partial class Form1 : Form
     {
+        SqlConnection c = new SqlConnection($@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\lapTrinh Net\testKT1\testKT1\bin\Debug\testKT1.mdf"";Integrated Security=True;Connect Timeout=30;Encrypt=True");
+        DataTable dt = new DataTable();
         public Form1()
         {
             InitializeComponent();
@@ -33,6 +38,16 @@ namespace quanLyCauThu
             label2.Parent = pictureBox1;
             label2.ForeColor = Color.Black;
             label2.Visible = false;
+            c.Open();
+            updateData();
+        }
+        private void updateData()
+        {
+            dt.Clear();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM congDan", c);
+            SqlDataAdapter a = new SqlDataAdapter(cmd);
+            a.Fill(dt);
+            dataGridView1.DataSource = dt;
         }
 
         private void textBox1_Enter(object sender, EventArgs e)
@@ -116,6 +131,60 @@ namespace quanLyCauThu
         private void button7_Click(object sender, EventArgs e)
         {
             label2.Visible = true;
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            textBox1.Text = dataGridView1.CurrentRow.Cells["ma"].Value.ToString();
+            textBox2.Text = dataGridView1.CurrentRow.Cells["hoTen"].Value.ToString();
+            textBox3.Text = dataGridView1.CurrentRow.Cells["tuoi"].Value.ToString();
+            textBox4.Text = dataGridView1.CurrentRow.Cells["diemCongDan"].Value.ToString();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            updateData();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand("INSERT INTO congDan VALUES (@ma,@hoTen,@tuoi,@diemCongDan)", c);
+            cmd.Parameters.AddWithValue("@ma", textBox1.Text);
+            cmd.Parameters.AddWithValue("@ten", textBox2.Text);
+            cmd.Parameters.AddWithValue("@ban", textBox3.Text);
+            cmd.Parameters.AddWithValue("@que", textBox4.Text);
+            cmd.ExecuteNonQuery();
+            updateData();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand("DELETE FROM congDan WHERE ma=@ma", c);
+            cmd.Parameters.AddWithValue("@ma", dataGridView1.CurrentRow.Cells["ma"].Value);
+            cmd.ExecuteNonQuery();
+            updateData();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand("UPDATE congDan SET ma=@ma,hoTen=@hoTen,tuoi=@tuoi,diemCongDan=@diemCongDan WHERE ma=@ma2", c);
+            cmd.Parameters.AddWithValue("@ma", textBox1.Text);
+            cmd.Parameters.AddWithValue("@ten", textBox2.Text);
+            cmd.Parameters.AddWithValue("@ban", textBox3.Text);
+            cmd.Parameters.AddWithValue("@que", textBox4.Text);
+            cmd.Parameters.AddWithValue("@ma2", dataGridView1.CurrentRow.Cells["ma"].Value);
+            cmd.ExecuteNonQuery();
+            updateData();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            dt.Clear();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM congDan WHERE ma=@ma", c);
+            cmd.Parameters.AddWithValue("@ma", textBox1.Text);
+            SqlDataAdapter a = new SqlDataAdapter(cmd);
+            a.Fill(dt);
+            dataGridView1.DataSource = dt;
         }
     }
 }
