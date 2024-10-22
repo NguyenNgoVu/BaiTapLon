@@ -16,7 +16,7 @@ namespace quanLyCauThu
 {
     public partial class Form1 : Form
     {
-        SqlConnection c = new SqlConnection($@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\lapTrinh Net\testKT1\testKT1\bin\Debug\testKT1.mdf"";Integrated Security=True;Connect Timeout=30;Encrypt=True");
+        SqlConnection c = new SqlConnection($@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={Application.StartupPath}\QLcongDan.mdf"";Integrated Security=True;Connect Timeout=30;Encrypt=True");
         DataTable dt = new DataTable();
         public Form1()
         {
