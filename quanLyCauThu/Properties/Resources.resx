@@ -124,14 +124,14 @@
   <data name="233723800_10158411442202616_5974656413147135446_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\233723800_10158411442202616_5974656413147135446_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="hinh-anh-background-trong-dong_095238742" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hinh-anh-background-trong-dong_095238742.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Football-Manager-2024" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Football-Manager-2024.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="png-transparent-cristiano-ronaldo-illustration-fifa-18-2014-fifa-world-cup-real-madrid-c-f-portugal-national-football-team-la-liga-cristiano-ronaldo-sports-equipment-jersey-sports" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-transparent-cristiano-ronaldo-illustration-fifa-18-2014-fifa-world-cup-real-madrid-c-f-portugal-national-football-team-la-liga-cristiano-ronaldo-sports-equipment-jersey-sports.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="silhouette-soccer-player-vector-illustration-linocut_969863-303468" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\silhouette-soccer-player-vector-illustration-linocut_969863-303468.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="istockphoto-636394506-1024x1024" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\istockphoto-636394506-1024x1024.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,6 +145,9 @@
   <data name="istockphoto-970489978-1024x1024" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\istockphoto-970489978-1024x1024.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="kisspng-football-manager-2014-football-manager-2016-footba-manager-5ac2eea7e26551.7650880215227245199273" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-football-manager-2014-football-manager-2016-footba-manager-5ac2eea7e26551.7650880215227245199273.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dbb598b3e1fa7ed282fd0390e45cdc58" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dbb598b3e1fa7ed282fd0390e45cdc58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,8 +160,8 @@
   <data name="Untitled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kisspng-football-manager-2014-football-manager-2016-footba-manager-5ac2eea7e26551.7650880215227245199273" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kisspng-football-manager-2014-football-manager-2016-footba-manager-5ac2eea7e26551.7650880215227245199273.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="silhouette-soccer-player-vector-illustration-linocut_969863-303468" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\silhouette-soccer-player-vector-illustration-linocut_969863-303468.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1781535-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1781535-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,13 +172,22 @@
   <data name="png-clipart-calendar-time-icon-calendar-holidays-text" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-clipart-calendar-time-icon-calendar-holidays-text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="z5945270707947_1450df2441fb30e19cdd75848f1d81d5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z5945270707947_1450df2441fb30e19cdd75848f1d81d5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-vietnam-dong-son-bronze-drum-pattern-blue-background-picture-image_1915085" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-vietnam-dong-son-bronze-drum-pattern-blue-background-picture-image_1915085.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="goal-icon-ball-football-icon-design-sports-symbol-association-football-referee-soccer-ball-png-clipart-thumbnail" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\goal-icon-ball-football-icon-design-sports-symbol-association-football-referee-soccer-ball-png-clipart-thumbnail.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="z5945270707947_1450df2441fb30e19cdd75848f1d81d5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\z5945270707947_1450df2441fb30e19cdd75848f1d81d5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pngtree-vietnam-dong-son-bronze-drum-pattern-blue-background-picture-image_19150851" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-vietnam-dong-son-bronze-drum-pattern-blue-background-picture-image_19150851.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-vietnam-dong-son-bronze-drum-pattern-print-background-picture-image_1915087" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-vietnam-dong-son-bronze-drum-pattern-print-background-picture-image_1915087.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

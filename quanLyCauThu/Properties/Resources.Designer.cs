@@ -164,6 +164,16 @@ namespace quanLyCauThu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hinh_anh_background_trong_dong_095238742 {
+            get {
+                object obj = ResourceManager.GetObject("hinh-anh-background-trong-dong_095238742", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
@@ -232,6 +242,39 @@ namespace quanLyCauThu.Properties {
                 object obj = ResourceManager.GetObject("png-transparent-cristiano-ronaldo-illustration-fifa-18-2014-fifa-world-cup-real-m" +
                         "adrid-c-f-portugal-national-football-team-la-liga-cristiano-ronaldo-sports-equip" +
                         "ment-jersey-sports", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_vietnam_dong_son_bronze_drum_pattern_blue_background_picture_image_1915085 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-vietnam-dong-son-bronze-drum-pattern-blue-background-picture-image_191508" +
+                        "5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_vietnam_dong_son_bronze_drum_pattern_blue_background_picture_image_19150851 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-vietnam-dong-son-bronze-drum-pattern-blue-background-picture-image_191508" +
+                        "51", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_vietnam_dong_son_bronze_drum_pattern_print_background_picture_image_1915087 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-vietnam-dong-son-bronze-drum-pattern-print-background-picture-image_19150" +
+                        "87", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
