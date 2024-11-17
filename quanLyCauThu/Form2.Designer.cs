@@ -152,21 +152,11 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Candara", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "City Boi",
-            "Gamer",
-            "Học vấn cao",
-            "Đoàn viên",
-            "Tatto",
-            "Gambler",
-            "Hội phụ nữ",
-            "Gymer",
-            "Tiktoker",
-            "Alan Walker"});
             this.comboBox1.Location = new System.Drawing.Point(203, 396);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(368, 36);
             this.comboBox1.TabIndex = 9;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // dataGridView1
             // 
