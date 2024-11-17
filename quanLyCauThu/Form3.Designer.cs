@@ -35,6 +35,8 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,7 +73,7 @@
             "Quyên góp đồng bào khó khăn (+150)",
             "Tham gia chiến dịch bảo vệ môi trường (+150)",
             "Khác (+50)"});
-            this.comboBox1.Location = new System.Drawing.Point(246, 216);
+            this.comboBox1.Location = new System.Drawing.Point(246, 318);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(713, 36);
             this.comboBox1.TabIndex = 11;
@@ -81,7 +83,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Candara", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(462, 167);
+            this.label6.Location = new System.Drawing.Point(453, 259);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(277, 28);
             this.label6.TabIndex = 10;
@@ -104,7 +106,7 @@
             "Xả rác bừa bãi (-50)",
             "Hút pod (-50)",
             "Khác (-50)"});
-            this.comboBox2.Location = new System.Drawing.Point(246, 344);
+            this.comboBox2.Location = new System.Drawing.Point(246, 449);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(713, 36);
             this.comboBox2.TabIndex = 13;
@@ -114,7 +116,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Candara", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(498, 295);
+            this.label2.Location = new System.Drawing.Point(500, 381);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(195, 28);
             this.label2.TabIndex = 12;
@@ -124,18 +126,40 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button1.Font = new System.Drawing.Font("Candara", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(516, 437);
+            this.button1.Location = new System.Drawing.Point(524, 510);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(160, 54);
             this.button1.TabIndex = 14;
             this.button1.Text = "THỰC HIỆN";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Candara", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(412, 181);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(368, 36);
+            this.textBox1.TabIndex = 15;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Candara", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(531, 130);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(128, 28);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "NHẬP CCCD";
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1204, 647);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label2);
@@ -161,5 +185,7 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
     }
 }

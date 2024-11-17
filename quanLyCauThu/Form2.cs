@@ -32,6 +32,7 @@ namespace quanLyCauThu
             dataGridView1.Columns["hoTen"].Resizable = DataGridViewTriState.True;
             dataGridView1.Columns["ngheNghiep"].Width = 130;
             dataGridView1.Columns["ngheNghiep"].Resizable = DataGridViewTriState.True;
+
             comboBox1.Items.Add("City boi");
             comboBox1.Items.Add("Gamer");
             comboBox1.Items.Add("Học vấn cao");
@@ -42,7 +43,10 @@ namespace quanLyCauThu
             comboBox1.Items.Add("Hội phụ nữ");
             comboBox1.Items.Add("Tiktoker");
             comboBox1.Items.Add("Alan Walker");
-     
+            comboBox1.Items.Add("Già làng");
+            comboBox1.Items.Add("Cò đất");
+            comboBox1.Items.Add("Wibu");
+            comboBox1.Items.Add("GENG con");
         }
         private void updateData()
         {
@@ -52,7 +56,7 @@ namespace quanLyCauThu
             adapter.Fill(dt);
             dataGridView1.DataSource = dt;
         }
-     
+      
 
         private void hienB_Click(object sender, EventArgs e)
         {
@@ -64,13 +68,23 @@ namespace quanLyCauThu
         {
             totL.Visible = true;
             badL.Visible = false;
-           
+            SqlCommand cmd = new SqlCommand("SELECT TOP 3 * FROM congDan ORDER BY diem DESC", c) ;
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            dataGridView1.DataSource = dt;
+
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             badL.Visible = true;
             totL.Visible = false;
+            SqlCommand cmd = new SqlCommand("SELECT TOP 3 * FROM congDan ORDER BY diem ASC", c);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            dataGridView1.DataSource = dt;
         }
         
 
@@ -85,9 +99,9 @@ namespace quanLyCauThu
             else if (ngheNghiep == "Gamer")
                 diemThayDoi = +100;
             else if (ngheNghiep == "Học vấn cao")
-                diemThayDoi = +100;
-            else if (ngheNghiep == "Đoàn viên")
                 diemThayDoi = +150;
+            else if (ngheNghiep == "Đoàn viên")
+                diemThayDoi = +175;
             else if (ngheNghiep == "Tattoo")
                 diemThayDoi = 0;
             else if (ngheNghiep == "Gambler")
@@ -97,17 +111,26 @@ namespace quanLyCauThu
             else if (ngheNghiep == "Gymer")
                 diemThayDoi = +50;
             else if (ngheNghiep == "Tiktoker")
-                diemThayDoi = 0;
+                diemThayDoi = -150;
             else if (ngheNghiep == "Alan Walker")
-                diemThayDoi = +50;
+                diemThayDoi = -50;
+            else if (ngheNghiep == "Già làng")
+                diemThayDoi = +200;
+            else if (ngheNghiep == "Cò đất")
+                diemThayDoi = -75;
+            else if (ngheNghiep == "Wibu")
+                diemThayDoi = +75;
+            else if (ngheNghiep == "GENG con")
+                diemThayDoi = -125;
             else diemThayDoi = 0;
 
-            SqlCommand cmd = new SqlCommand("INSERT INTO congDan VALUES (@cccd,@hoTen,@ngaySinh,@diaChi,@ngheNghiep,@diem + diemThayDoi)", c);
+            SqlCommand cmd = new SqlCommand("INSERT INTO congDan (cccd, hoTen, ngaySinh, diaChi, ngheNghiep,diem) VALUES (@cccd,@hoTen,@ngaySinh,@diaChi,@ngheNghiep,1000 + @diemThayDoi)", c);
             cmd.Parameters.AddWithValue("@cccd", textBox1.Text);
             cmd.Parameters.AddWithValue("@hoTen", textBox3.Text);
             cmd.Parameters.AddWithValue("@ngaySinh", dateTimePicker1.Value);
             cmd.Parameters.AddWithValue("@diaChi", textBox4.Text);
             cmd.Parameters.AddWithValue("@ngheNghiep", comboBox1.Text);
+            cmd.Parameters.AddWithValue("@diemThayDoi",diemThayDoi);
             cmd.ExecuteNonQuery();
 
             updateData();
@@ -132,23 +155,61 @@ namespace quanLyCauThu
 
         private void button3_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("UPDATE congDan SET cccd=@cccd,hoTen=@hoTen,ngaySinh=@ngaySinh,diaChi=@diaChi,ngheNghiep=@ngheNghiep WHERE cccd=@cccd1", c);
+            string ngheNghiep = comboBox1.SelectedItem.ToString();
+            int diemThayDoi = 0;
+
+
+            if (ngheNghiep == "City boi")
+                diemThayDoi = -200;
+            else if (ngheNghiep == "Gamer")
+                diemThayDoi = +100;
+            else if (ngheNghiep == "Học vấn cao")
+                diemThayDoi = +150;
+            else if (ngheNghiep == "Đoàn viên")
+                diemThayDoi = +175;
+            else if (ngheNghiep == "Tattoo")
+                diemThayDoi = 0;
+            else if (ngheNghiep == "Gambler")
+                diemThayDoi = -100;
+            else if (ngheNghiep == "Hội phụ nữ")
+                diemThayDoi = +50;
+            else if (ngheNghiep == "Gymer")
+                diemThayDoi = +50;
+            else if (ngheNghiep == "Tiktoker")
+                diemThayDoi = -150;
+            else if (ngheNghiep == "Alan Walker")
+                diemThayDoi = -50;
+            else if (ngheNghiep == "Già làng")
+                diemThayDoi = +200;
+            else if (ngheNghiep == "Cò đất")
+                diemThayDoi = -75;
+            else if (ngheNghiep == "Wibu")
+                diemThayDoi = +75;
+            else if (ngheNghiep == "GENG con")
+                diemThayDoi = -125;
+            else diemThayDoi = 0;
+            SqlCommand cmd = new SqlCommand("UPDATE congDan SET cccd=@cccd,hoTen=@hoTen,ngaySinh=@ngaySinh,diaChi=@diaChi,ngheNghiep=@ngheNghiep, diem=1000+@diemThayDoi WHERE cccd=@cccd1", c);
             cmd.Parameters.AddWithValue("@cccd", textBox1.Text);
             cmd.Parameters.AddWithValue("@hoTen", textBox3.Text);
             cmd.Parameters.AddWithValue("@ngaySinh", dateTimePicker1.Value);
             cmd.Parameters.AddWithValue("@diaChi", textBox4.Text);
             cmd.Parameters.AddWithValue("@ngheNghiep", comboBox1.Text);
+            cmd.Parameters.AddWithValue("@diemThayDoi",diemThayDoi);
             cmd.Parameters.AddWithValue("@cccd1", dataGridView1.CurrentRow.Cells["cccd"].Value);
             cmd.ExecuteNonQuery();
 
             updateData();
         }
 
-      
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-
+            SqlCommand cmd = new SqlCommand("SELECT * FROM congDan ORDER BY diem DESC", c);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            dataGridView1.DataSource = dt;
         }
+
     }
 }
