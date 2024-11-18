@@ -65,14 +65,6 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Candara", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Tham gia đội dân quân tự vệ (+300)",
-            "Tham gia phòng chống dịch bệnh, ảnh hưởng của thiên tai (+300)",
-            "Tuân thủ pháp luật (+200)",
-            "Tham gia hiến máu (+200)",
-            "Quyên góp đồng bào khó khăn (+150)",
-            "Tham gia chiến dịch bảo vệ môi trường (+150)",
-            "Khác (+50)"});
             this.comboBox1.Location = new System.Drawing.Point(246, 318);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(713, 36);
@@ -93,19 +85,6 @@
             // 
             this.comboBox2.Font = new System.Drawing.Font("Candara", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Tàng trữ, sử dụng chất cấm (-300)",
-            "Dính líu đến hoạt động rửa tiền bất hợp pháp (-300)",
-            "Lừa đảo chiếm đoạt tài sản (-250)",
-            "Trộm cắp (-200)",
-            "Tham gia giao thông khi sử dụng rượu bia (-200)",
-            "Gây rối trật tự công cộng (-150)",
-            "Phóng nhanh vượt ẩu (-150)",
-            "Không đội mũ bảo hiểm khi sử dụng xe gắn máy (-100)",
-            "Vượt đèn đỏ (-100)",
-            "Xả rác bừa bãi (-50)",
-            "Hút pod (-50)",
-            "Khác (-50)"});
             this.comboBox2.Location = new System.Drawing.Point(246, 449);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(713, 36);
@@ -132,6 +111,7 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "THỰC HIỆN";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
