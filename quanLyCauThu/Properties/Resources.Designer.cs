@@ -123,6 +123,16 @@ namespace quanLyCauThu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chatbox {
+            get {
+                object obj = ResourceManager.GetObject("chatbox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dbb598b3e1fa7ed282fd0390e45cdc58 {
             get {
                 object obj = ResourceManager.GetObject("dbb598b3e1fa7ed282fd0390e45cdc58", resourceCulture);

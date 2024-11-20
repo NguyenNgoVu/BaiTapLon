@@ -170,5 +170,8 @@
   <ItemGroup>
     <None Include="Resources\pngtree-vietnam-dong-son-bronze-drum-pattern-print-background-picture-image_1915087.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chatbox.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
